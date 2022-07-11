@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width, initial-scale=version">
+    <title>Article Form</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <header class="header flex">
+        <p>Article Store</p>
+        <a href="/articles">Go to Article List</a>
+      </header>
+    <main class="flex-center">
+        <div class="form-outer">
+            <form class="flex-column" action="/articles" method="post">
+                <input name="title" type="text" placeholder="Article title">
+                <input name="description" type="text" placeholder="Article description">
+                <input name="tags" type="text" placeholder="Article Tags">
+                <input name="author" type="text" placeholder="Article Author">
+                <input name="likes" type="number" placeholder="Article Likes">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
