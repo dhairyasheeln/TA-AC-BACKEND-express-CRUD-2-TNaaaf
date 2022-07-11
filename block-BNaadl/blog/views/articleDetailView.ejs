@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width, initial-scale=version">
+    <title>title</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <header class="header">
+        <p>Article Store</p>
+      </header>
+    <main>
+            <div class="article-cover">
+                <p class="article-title article-field"><%= article.title %></p>
+                <p class="article-field">Description: <%= article.description %></p>
+                <p class="article-field">Tags:  <%= article.tags %></p>
+                <p class="article-field">Author: <%= article.author %></p>
+                <p class="article-field">Likes: <%= article.likes %></p>
+                <a href="">Increment Likes</a>
+                <a href="">Decrement Likes</a>
+                <a href="/articles/<%= article._id %>/edit">Edit Article</a>
+                <a href="">Delete Article</a>
+
+            </div>
+    </main>
+</body>
+</html>
